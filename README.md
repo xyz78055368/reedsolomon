@@ -18,7 +18,7 @@ Godoc: https://pkg.go.dev/github.com/klauspost/reedsolomon
 # Installation
 To get the package use the standard:
 ```bash
-go get -u github.com/klauspost/reedsolomon
+go get -u github.com/xyz78055368/reedsolomon
 ```
 
 Using Go modules is recommended.

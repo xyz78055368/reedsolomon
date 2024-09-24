@@ -20,7 +20,7 @@ import (
 	"unicode"
 
 	"github.com/klauspost/cpuid/v2"
-	"github.com/klauspost/reedsolomon"
+	"github.com/xyz78055368/reedsolomon"
 )
 
 var (

@@ -1,8 +1,8 @@
-module github.com/klauspost/reedsolomon
+module github.com/xyz78055368/reedsolomon
 
 go 1.20
 
-require github.com/klauspost/cpuid/v2 v2.2.8
+require github.com/xyz78055368/cpuid/v2 v2.2.8
 
 require golang.org/x/sys v0.24.0 // indirect
 

@@ -416,16 +416,17 @@ func New(dataShards, parityShards int, opts ...Option) (Encoder, error) {
 		opt(&o)
 	}
 
-	totShards := dataShards + parityShards
+	//totShards := dataShards + parityShards
 	switch {
-	case o.withLeopard == leopardGF16 && parityShards > 0 || totShards > 256:
+	//case o.withLeopard == leopardGF16 && parityShards > 0 || totShards > 256:
+	case o.withLeopard == leopardGF16 && parityShards > 0:
 		return newFF16(dataShards, parityShards, o)
 	case o.withLeopard == leopardAlways && parityShards > 0:
 		return newFF8(dataShards, parityShards, o)
 	}
-	if totShards > 256 {
-		return nil, ErrMaxShardNum
-	}
+	//if totShards > 256 {
+	//	return nil, ErrMaxShardNum
+	//}
 
 	r := reedSolomon{
 		dataShards:   dataShards,
